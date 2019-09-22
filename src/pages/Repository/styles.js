@@ -48,6 +48,13 @@ export const IssueList = styled.ul`
   border-top: 1px solid #eee;
   list-style: none;
 
+  select {
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
   li {
     display: flex;
     padding: 15px 10px;
@@ -98,6 +105,39 @@ export const IssueList = styled.ul`
       margin-top: 5px;
       font-size: 12px;
       color: #999;
+    }
+  }
+`;
+
+export const PaginationButtons = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+
+  button {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color: #7159c1;
+    color: #fff;
+    font-weight: bold;
+    border: 0;
+    border-radius: 4px;
+
+    &:first-of-type {
+      margin-right: 10px;
+    }
+
+    &:active {
+      background-color: #382c60;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
     }
   }
 `;
